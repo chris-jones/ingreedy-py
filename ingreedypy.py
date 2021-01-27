@@ -66,6 +66,14 @@ class Ingreedy(NodeVisitor):
         """
         ingredient_addition = approx? break? multipart_quantity alternative_quantity? break? ingredient? catch_all
 
+        approx
+        = "about"
+        / "approximately"
+        / "approx"
+        / "approx."
+        / "roughly"
+        / "around"
+
         multipart_quantity
         = (quantity_fragment break?)*
 
@@ -516,13 +524,6 @@ class Ingreedy(NodeVisitor):
         / ~"[⅝]"u
         / ~"[⅞]"u
 
-        approx
-        = "about"
-        / "approximately
-        / "approx"
-        / "approx."
-        / "roughly"
-        / "around"
 
         catch_all
         = ~".*"
