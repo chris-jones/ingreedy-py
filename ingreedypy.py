@@ -340,6 +340,7 @@ class Ingreedy(NodeVisitor):
         / bunch
         / bag
         / jug
+        / shot
 
         package
         = "packages"
@@ -472,6 +473,10 @@ class Ingreedy(NodeVisitor):
         touch
         = "touches"
         / "touch"
+
+        shot
+        = "shots"
+        / "shot"
 
         number = written_number break
 
