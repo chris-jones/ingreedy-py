@@ -316,6 +316,19 @@ class Ingreedy(NodeVisitor):
         / section
         / packet
         / cube
+        / bottle
+        / can
+        / container
+        / sprinkle
+        / batch
+        / drizzle
+        / glug
+        / finger
+        / dollop
+        / nip
+        / bunch
+        / bag
+        / jug
 
         package
         = "packages"
@@ -376,6 +389,58 @@ class Ingreedy(NodeVisitor):
         cube
         = "cubes"
         / "cube"
+
+        bottle
+        = "bottles"
+        / "bottle"
+
+        can
+        = "cans"
+        / "can"
+
+        container
+        = "containers"
+        / "container"
+
+        sprinkle
+        = "sprinkles"
+        / "sprinkle"
+
+        batch
+        = "batches"
+        / "batch"
+
+        drizzle
+        = "drizzles"
+        / "drizzle"
+
+        glug
+        = "glugs"
+        / "glug"
+
+        finger
+        = "fingers"
+        / "finger"
+
+        dollop
+        = "dollops"
+        / "dollop"
+
+        nip
+        = "nips"
+        / "nip"
+
+        bunch
+        = "bunches"
+        / "bunch"
+
+        bag
+        = "bags"
+        / "bag"
+
+        jug
+        = "jugs"
+        / "jug"
 
         piece
         = "pieces"
