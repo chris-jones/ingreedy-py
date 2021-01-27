@@ -64,7 +64,7 @@ class Ingreedy(NodeVisitor):
 
     grammar = Grammar(
         """
-        ingredient_addition = multipart_quantity alternative_quantity? break? ingredient? catch_all
+        ingredient_addition = approx? multipart_quantity alternative_quantity? break? ingredient? catch_all
 
         multipart_quantity
         = (quantity_fragment break?)*
@@ -516,6 +516,14 @@ class Ingreedy(NodeVisitor):
         / ~"[⅝]"u
         / ~"[⅞]"u
 
+        approx
+        = "about"
+        / "approximately
+        / "approx"
+        / "approx."
+        / "roughly"
+        / "around"
+
         catch_all
         = ~".*"
         """)
@@ -605,8 +613,8 @@ class Ingreedy(NodeVisitor):
 
     def visit_ingredient_addition(self, node, visited_children):
         return {
-            'quantity': visited_children[0],
-            'ingredient': visited_children[3]
+            'quantity': visited_children[1],
+            'ingredient': visited_children[4]
         }
 
     def visit_number(self, node, visited_children):
