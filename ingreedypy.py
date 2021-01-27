@@ -301,6 +301,85 @@ class Ingreedy(NodeVisitor):
         / handful
         / pinch
         / touch
+        / package
+        / sprig
+        / clove
+        / stick
+        / stalk
+        / bunch
+        / leaf
+        / head
+        / slice
+        / bulb
+        / box
+        / knob
+        / section
+        / packet
+        / cube
+
+        package
+        = "packages"
+        / "package"
+
+        sprig
+        = "sprigs"
+        / "sprig"
+
+        clove
+        = "cloves"
+        / "clove"
+
+        stick
+        = "sticks"
+        / "stick"
+
+        stalk
+        = "stalks"
+        / "stalk"
+
+        bunch
+        = "bunches"
+        / "bunch"
+
+        leaf
+        = "leaves"
+        / "leaf"
+
+        head
+        = "heads"
+        / "head"
+
+        slice
+        = "slices"
+        / "slice"
+
+        bulb
+        = "bulbs"
+        / "bulb"
+
+        box
+        = "boxes"
+        / "box"
+
+        knob
+        = "knobs"
+        / "knob"
+
+        section
+        = "sections"
+        / "section"
+
+        packet
+        = "packets"
+        / "packet"
+
+        cube
+        = "cubes"
+        / "cube"
+
+        piece
+        = "pieces"
+        / "piece"
 
         dash
         = "dashes"
