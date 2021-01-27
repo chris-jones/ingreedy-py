@@ -614,8 +614,8 @@ class Ingreedy(NodeVisitor):
 
     def visit_ingredient_addition(self, node, visited_children):
         return {
-            'quantity': visited_children[1],
-            'ingredient': visited_children[4]
+            'quantity': visited_children[2],
+            'ingredient': visited_children[5]
         }
 
     def visit_number(self, node, visited_children):
